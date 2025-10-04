@@ -9,6 +9,10 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1f2937">
     <link rel="icon" type="image/png" sizes="192x192" href="icons/icon.png">
+    <!-- CSS Flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- JS Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
 <body>
@@ -35,15 +39,17 @@
         </div>
 
         <div class="add-note">
-            <input type="date" id="noteDate">
-            <textarea id="noteContent" placeholder="Tulis catatan baru..."></textarea>
-            <button id="addNoteBtn">Tambah Catatan</button>
-        </div>
+        <input type="date" id="noteDate">
+        <textarea id="noteContent" placeholder="Tulis catatan baru..."></textarea>
+        <button id="addNoteBtn">Tambah Catatan</button>
+    </div>
+</div>
 
-        <!-- Container catatan -->
-        <div id="noteList" class="note-list"></div>
+<!-- Container catatan -->
+<div id="noteList" class="note-list"></div>
 
-        <script src="notes.js"></script>
+<!-- Script di akhir body -->
+<script src="notes.js" defer></script>
 </body>
 
 </html>

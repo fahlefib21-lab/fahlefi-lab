@@ -129,4 +129,12 @@ function setupAddNote() {
 document.addEventListener("DOMContentLoaded", () => {
     renderNotes();   // tampilkan catatan yang ada
     setupAddNote();  // setup tombol tambah catatan
+
+    // ===== Inisialisasi Flatpickr =====
+    flatpickr("#noteDate", {
+        dateFormat: "Y-m-d",  // format sama dengan key localStorage
+        defaultDate: "today",  // default hari ini
+        allowInput: true       // user masih bisa ketik manual
+    });
 });
+
